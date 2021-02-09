@@ -858,6 +858,7 @@ class Html extends BaseWriter
         while ($column++ < $highestColumnIndex) {
             $this->columnWidths[$sheetIndex][$column] = 42; // approximation
             $css['table.sheet' . $sheetIndex . ' col.col' . $column]['width'] = '42pt';
+            $css['table.sheet' . $sheetIndex . ' td.style' . $column]['width'] = '42pt';
         }
 
         // col elements, loop through columnDimensions and set width
@@ -871,6 +872,7 @@ class Html extends BaseWriter
             if ($width >= 0) {
                 $this->columnWidths[$sheetIndex][$column] = $width;
                 $css['table.sheet' . $sheetIndex . ' col.col' . $column]['width'] = $width . 'pt';
+                $css['table.sheet' . $sheetIndex . ' td.style' . $column]['width'] = $width . 'pt';
             }
         }
 
