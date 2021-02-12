@@ -64,7 +64,7 @@
     "require-dev": {
         "dompdf/dompdf": "^0.8.5",
         "friendsofphp/php-cs-fixer": "^2.18",
-        "jpgraph/jpgraph": "^4.0",
+        "jpgraph/jpgraph": "^4.3",
         "mpdf/mpdf": "^8.0",
         "phpcompatibility/php-compatibility": "^9.3",
         "phpunit/phpunit": "^8.5||^9.3",
